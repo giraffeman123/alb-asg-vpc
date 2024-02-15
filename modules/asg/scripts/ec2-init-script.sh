@@ -32,7 +32,7 @@ services:
   image: elliotmtz12/merge-sort 
   container_name: merge-sort-app
   ports:
-   - "80:3000"
+   - "${app_port}:3000"
   environment:
    - TZ=America/Tijuana  
   network_mode: bridge
